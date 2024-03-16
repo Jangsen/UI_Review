@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GET 방식0</title>
+</head>
+<body>
+  <h2>GET 방식으로 데이터 전송</h2>
+  <form action="02_getdata.jsp">
+    <p>이름: <input type="text" name="name"></p>
+    <p>전공: <input type="text" name="major"></p>
+    <p></p>
+    <input type="submit" value="전송">
+    <input type="reset" value="다시작성">
+  </form>
+</body>
+</html>
+
+<!--  
+
+  GET 방식
+
+  = URL 뒤에 파라미터를 붙여서 데이터를 전달하는 방식
+  = 사용자가 보내는 데이터는 이름과 값이 결합된 문자열 형태로 전달,
+    각 이름과 값의 쌍은 '&' 기호로 구분
+  = 서버로 보낼 수 있는 최대 글자수는 2,048자
+  = URL을 보면 어떤 데이터를 전송하고자 하는지
+    알 수 있기 때문에 보안에 취약
+
+-->

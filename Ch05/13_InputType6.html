@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>히든 필드를 사용해 서버로 정보 보내기, 색상 선택</title>
+</head>
+<body>
+  <fieldset>
+    <input type="hidden" value="사이트를 통한 직접 로그인">
+    <label>아이디: <input type="text" id="user-id" size="10"></label>
+    <label>비밀번호: <input type="password" id="user-pw" size="10"></label>
+    <input type="submit" value="로그인">
+  </fieldset>
+  
+  <form>
+    <h3>원하는 색상을 선택하세요</h3>
+    <input type="color" name="color value" value="#0000ff">
+    <p></p>
+    <input type="submit" value="선택완료">
+    <input type="reset" value="다시선택">
+  </form>
+</body>
+</html>
+
+<!-- 
+
+  type="hidden"
+
+  = 화면 상의 폼에 보이지 않음
+  = 폼을 서버로 전송할 때 서버로 함께 전송되는 요소
+
+  기본형
+
+  = <input type="hidden" name="이름" vlaue="서버로 넘길 값"
+
+
+  type="color"
+
+  = 색상 칩에서 원하는 색상을 선택할 수 있음
+
+-->

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>달력 이용해 날짜 입력</title>
+</head>
+<body>
+  <form>
+    <h1>날짜 지정하기</h1>
+    <input type="date">
+    <input type="month">
+    <input type="week">
+  </form>
+  <form>
+    <h1>시간 지정하기</h1>
+    <input type="time">
+    <input type="datetime">
+    <input type="datetime-local">
+
+  </form>
+  
+</body>
+</html>
+
+
+<!--  
+
+  type="date", type="month", type="week"
+
+  달력을 이용해 날짜 입력
+
+  <input type="date | month | week">
+
+  date
+
+  = 달력에서 날짜를 선택해서 입력 할 수 있음
+    날짜를 선택하면 필드에 "yyyy-mm-dd"형식으로
+    연도, 월, 일이 표시
+
+  month
+
+  = 달력에서 월을 선택해서 입력할 수 있음
+    월을 선택하면 "yyyy-mm" 형식으로
+    연도, 월까지만 입력됨
+
+  week
+
+  = 달력에서 주를 선택해서 입력할 수 있음
+    주를 선택하면 1월 첫째 주를 기준으로
+    몊 번째 주인지 표시됨
+
+    type="time", type="datetime-local"
+    시간 입력
+
+    기본형
+    <input type="time | datetime | datetime-local"
+
+    time
+
+    = 폼에서 시간을 입력하게 함
+      시간 입력 필드는 웹 브라우저마다 조금씩
+      다르게 나타나는데 항목이 3개로 구성된다는 점은 같음
+      첫 번째 항목부터 '오전'과 '오휴'를 의미하고
+      나머지는 '시'와 '분'을 의미함
+
+    datetime , datetime-local
+
+    = 위 유형을 사용하면 사용자가 웹 문서를 보고있는
+      지역에 맞는 날짜와 시간을 함께 입력할 수 있음
+    
+-->

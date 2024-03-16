@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>체크박스와 라디오버튼 삽입하는 폼 만들기</title>
+</head>
+<body>
+  <fieldset>
+    <legend>상품 선택</legend>
+    <p><b>주문할 상품을 선택해 주세요</b></p>
+    <ul>
+      <li>
+        <label><input type="checkbox" value="s_3">선물용 3kg</label>
+        <input type="number" min="0" max="5">개 (최대 5개)
+      </li>
+      <li>
+        <label><input type="checkbox" value="s_5">선물용 5kg</label>
+        <input type="number" min="0" max="3">개 (최대 3개)
+      </li>
+      <li>
+        <label><input type="checkbox" value="f_3">가정용 3kg</label>
+        <input type="number" min="0" max="5">개 (최대 5개)
+      </li>
+      <li>
+        <label><input type="checkbox" value="f_5">가정용 5kg</label>
+        <input type="number" min="0" max="3">개 (최대 3개)
+      </li>
+    </ul>
+    <p><b>포장 선택</b></p>
+    <li><label><input type="radio" name="gift" value="yes">선물 포장</label></li>
+    <li><label><input type="radio" name="gift" value="no">선물 포장 안 함</label></li>
+  </fieldset>
+</body>
+</html>
+
+<!--  
+
+  <input> 태그 type 속성
+
+  type="radio"
+
+  여러 항목 중 하나만 선택할 때
+
+  type="checkbox"
+
+  여러 항목 중 둘이상을 선택 할 때
+
+  기본형
+
+  <input type="checkbox">
+  <input type="radio">
+
+  라디오 버튼, 체크 박스에서 사용하는 속성
+
+name
+
+= 라디오 버튼이나 체크박스가 여러 개 있을 경우,
+  서버의 폼 프로그램에서 라디오 버튼이나 체크박스를
+  구분하기 위해 이름을 지정함.
+  라디오 버튼은 여러 개 중에서 한가지만 선택하는 것이기에
+  관련 있는 그룹끼리는 name 속성 값을 똑같이 만듦
+
+value
+
+= 선택한 라디오 버튼이나 체크박스를 서버로 알려 줄 때
+  넘길 값을 지정.
+  이 값은 영문이거나 숫자여야 하며 필수 속성임
+
+checkbox
+
+= 라디오 버튼의 항목들은 처음에 아무것도 선택되지 않은 상태로
+  화면에 표시되는데 기본으로 선택해 놓을 항목이 있다면
+  checked 속성을 사용
+
+  <input> 태그의 type 속성
+
+type="number"
+
+숫자 입력 필드, 브라우저에 따라 스핀 박스로 표시됨
+
+type="range"
+
+숫자 입력 필드, 슬라이드 막대를 이용해 숫자 입력
+
+기본형
+
+= <input type="number">
+  <input type="range">
+
+숫자 입력 필드에서 사용하는 속성
+
+min
+
+= 필드에 입력할 수 있는 최솟값을 지정 기본 최솟값은 0
+
+max
+
+= 필드에 입력할 수 있는 최댓값을 지정 기본 최댓값은 100
+
+step
+
+= 숫자 간격을 지정할 수 있음 기본값은 1
+
+value
+
+= 필드에 표시할 초깃값
+
+-->

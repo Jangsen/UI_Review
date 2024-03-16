@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>POST 방식</title>
+</head>
+<body>
+    <h2>POST 방식으로 데이터 전송</h2>
+    <form action="03_postdata.jsp" method="POST">
+      <p>이름: <input type="text" name="name"></p>
+      <p>전공: <input type="text" name="major"></p>
+      <p></p>
+      <input type="submit" value="전송">
+      <input type="reset" value="다시작성">
+    </form>
+</body>
+</html>
+
+<!--  
+
+  POST 방식
+
+  = HTTP Request 헤더에 파라미터를 붙여서 데이터를 전송하는 방식
+  = 서버로 보낼 수 있는 글자수 제한 없음
+  = 전송데이터가 보이지 않아 GET 방식과 비교하여 보안상 우위에 있음
+  
+
+
+-->

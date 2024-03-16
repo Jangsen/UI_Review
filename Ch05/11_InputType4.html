@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>전송/리셋/이미지 버튼</title>
+</head>
+<body>
+  <div>
+    <button type="submit">주문하기</button>
+    <button type="reser">취소하기</button>
+  </div>
+  <fieldset>
+    <label>아이디: <input type="text" id="user-id" size="10"></label>
+    <label>비밀번호: <input type="password" id="user-pw" size="10"></label>
+    <input type="image" src="img/NS.png" alt="로그인">
+  </fieldset>
+</body>
+</html>
+
+<!--  
+
+  type="submit", type="reset"
+
+= 폼 전송/ 리셋 버튼
+= 전송(submit)버튼: 사용자 입력 내용을 서버로 전송
+= 리셋(reset)버튼: 사용자 입력 내용 전부 삭제
+= value 속성을 이용해 버튼 표시 내용 지정
+
+기본형
+
+= <input type="submit | reset" value="버튼에 표시할 내용"
+
+type="image"
+
+= submit 버튼 대신 이미지 삽입
+
+기본형
+
+= <input type="image" src="이미지 경로" alt="대체 텍스트">
+
+-->
