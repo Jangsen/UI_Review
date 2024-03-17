@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>텍스트 요소 자유롭게 배치하기</title>
+  <style>
+    #pos1{
+      position: absolute; /* 포지셔닝 - absolute */
+      left: 50px;         /* 왼쪽에서 50px 떨어지게 */
+      top: 50px;          /* 위쪽에서 50px 떨어지게 */
+    }
+    #pos2{
+      position: absolute; /* 포지셔닝 - absolute */
+      right: 100px;       /* 오른쪽에서 100px 떨어지게 */
+      top: 100px;         /* 위쪽에서 100px 떨어지게 */
+    }
+    #pos3{
+      position: absolute; /* 포지셔닝 - absolute */
+      left: 100px;        /* 왼쪽에서 100px 떨어지게 */
+      bottom: 100px;      /* 아래쪽에서 100px 떨어지게 */
+    }
+  </style>
+</head>
+<body>
+  <p id="pos1">왼쪽 50px 위쪽 50px</p>
+  <p id="pos2">오른쪽 100px 위쪽 100px</p>
+  <p id="pos3">왼쪽 50px 아래쪽 100px</p>
+</body>
+</html>
+
+<!--  
+
+웹 요소의 위치 지정하기
+
+left, right, bottom, top 속성
+
+left
+
+= 기준 위치와 요소 사이에 왼쪽으로 얼마나
+  떨어져 있는지 지정
+
+right
+
+= 기준 위치와 요소 사이에 오른쪽으로 얼마나
+  떨어져 있는지 지정
+
+top
+
+= 기준 위치와 요소 사이에 위쪽으로 얼마나
+  떨어져 있는지 지정
+
+bottom
+
+= 기준 위치와 요소 사이에 아래쪽으로 얼마나
+  떨어져 있는지 지정
+
+-->

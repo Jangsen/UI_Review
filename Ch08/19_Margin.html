@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>웹문서 전체를 웹 브라우저 화면 중앙에 배치하기
+  </title>
+  <style>
+    body{
+      background-color: #222;
+    }
+    #container{
+      background-color: #fff;
+      width: 600px;
+      margin: 20px auto;
+      padding: 20px;
+    }
+    table, th, td{
+      border: 1px solid #ccc;
+      border-collapse: collapse;
+    }
+    th, td{
+      padding: 10px 20px;
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <h1>레드향</h1>
+    <p>껍질에 붉은 빛이 돌아<b>레드향</b>이라 불린다.</p>
+    
+  </div>
+</body>
+</html>
+
+<!--  
+
+margin 속성
+
+= 현재 요소 주변의 여백
+= 마진을 이용하면 요소와 요소 간의 
+  간격 조절 가능
+
+  기본형:
+  margin:<크기>|<백분율>|auto
+
+<크기>
+
+= 너빗값이나 높잇값을 px 나 em 같은 단위와 함께
+  수치로 지정
+
+  ex) margin: 50px;
+
+<백분율>
+
+= 박스 모델을 포함한 부모 요소를 기준으로 너빗값이나
+  높잇값을 퍼센트(%)로 지정
+
+  ex) margin: 0.1%
+
+auto
+
+= display 속성에서 지정한 값에 맞게 
+  적절한 값을 자동으로 지정
+
+
+margin 속성을 사용해 가운데 정렬하기
+
+= 배치할 요소의 너빗값이 정해져 있어야함.
+= margin-left와 margin-right의 속성값을 auto 로 지정
+-->

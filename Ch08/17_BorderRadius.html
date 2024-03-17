@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>이미지 둥글게 바꾸기</title>
+  <style>
+    #round{
+      /* 모든 꼭짓점을 둥글게 */
+      border-radius: 25px; 
+    }
+    #circle{
+      /* 테두리를 원으로 */
+      border-radius: 50%;
+    }
+    #round1{
+      border: 2px solid blanchedalmond;
+      border-top-left-radius: 20px;
+      /* 왼쪽 위 꼭짓점만 둥글게 */
+      border-top-right-radius: 20px;
+      /* 오른쪽 위 꼭짓점만 둥글게 */
+    }
+  </style>
+</head>
+<body>
+  <img src="img/image1.jpg">
+  <img id="round" src="img/image1.jpg">
+  <hr>
+  <img src="img/image2.jpg">
+  <img id="circle" src="img/image2.jpg">
+  <hr>
+  <div id="round1"><img src="img/vertex.png"></div>
+
+</body>
+</html>
+
+<!--  
+
+border-radius 속성
+
+= 박스 모델의 테두리를 둥글게 처리
+= 박스 모델의 꼭짓점 부분에 원(반지름 r)이 있다고
+  가정해서 둥글게 처리
+
+기본형:
+
+border-radius: <크기> | <백분율>
+
+<크기>
+
+= 반지름 크기를 px, em 단위와 함께 수치로 표시
+
+<백분율>
+
+= 현재 요소의 크기를 기준으로 비율(%)로 지정함
+
+** border 와 radius 사이에 위치를 나타내는 예약어
+
+각 꼭짓점을 나타내는 예약어
+
+top-left
+
+top-right
+
+bottom-right
+
+bottom-left
+-->

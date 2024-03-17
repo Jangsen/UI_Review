@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>이미지와 테두리 사이의 흰색 공간 삭제하기</title>
+  <style>
+    .items{
+      border: solid 3px #000000;
+      float: right;
+      margin: 5px;
+    }
+    .items img{
+      display: block;
+    }
+    .clear{
+      clear: left;
+    }
+  </style>
+</head>
+<body>
+  <div class="items">
+    <img src="img/Box.jpg" width="140">
+  </div>
+  <div class="items">
+    <img src="img/Box2.jpg" width="140">
+  </div>
+  <div class="items">
+    <img src="img/image1.jpg" width="140">
+  </div>
+  <div class="clear"></div>
+  <div class="items">
+    <img src="img/image2.jpg" width="140">
+  </div>
+  <div class="items">
+    <img src="img/vertex.png" width="140">
+  </div>
+  <div class="items">
+    <img src="img/simanticfloat.jpg" width="140">
+  </div>
+</body>
+</html>
