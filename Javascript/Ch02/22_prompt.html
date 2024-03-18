@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    
+    let userInput = prompt("아무 숫자나 입력하세요.")
+    typeof(userInput)        // 'string'
+
+    result = userInput * 10   // 1000
+    userInput                 // '10'
+
+  </script>
+  
+</body>
+</html>
+
+
+<!--  
+
+프롬프트 창에서 값을 입력 받으면 그 값은 문자열
+
+userInput에 10을 곱하면 자동으로 숫자형으로 변환되면서 계산값이 result에 저장됨.
+
+하지만 userInput 값은 계속 문자열인 상태.
+
+userInput이 숫자로 바뀌었다고 착각할 수 있음
+
+프롬프트 창에서 숫자를 입력 받을 경우 직접 숫자로 변환한 후 연산에 사용하는 것이 좋다.
+
+
+-->

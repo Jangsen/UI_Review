@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // <<<<< let >>>>>
+    // 1) let 키워드를 써서 result 변수를 선언하고 10이라는 값을 할당하기
+    let result;
+    result = 10;
+
+    // 2) 이미 만들어 놓은 result 변수에 20을 할당하기
+    result = 20;
+    // let 변수에는 다른 값을 할당 할 수 있음
+
+    // <<<<< const >>>>>
+    // 1) const 키워드를 써서 number 변수를 선언하고 10이라는 값 할당하기 
+    // const number;
+    // number = 10;
+      const number = 10;
+
+    // 2) number 변수에 20 할당하기
+      number = 20;
+    // const == 상수 == 상수 변수에는 다른 값을 할당할 수 없음.
+  </script>
+</body>
+</html>
+
+
+<!--  
+
+<변수 이름 정하는 규칙>
+
+1) 변수 이름은 숫자로 시작할 수 없고 이름 안에 공백이 포함되어 있으면 안 됨.
+
+current, _current, $current    // 사용 가능 
+25current, curr ent, current*  // 사용 불가능
+
+2) 자바스크립트는 영문자의 대소문자를 구별함.
+
+current, Current, CURRENT  // 모두 다른 변수
+
+3) 한 단어로 이루어진 변수를 사용할 때에는 주로 소문자를 사용 
+
+current, age, sum
+
+4) 두 단어 이상으로 이루어진 변수는 
+언더바(_)로 연결하거나 중간에 대문자를 섞어 사용
+
+current_year, total_area   // 스네이크 표기법  
+
+currentYear, totalArea     // 카멜 표기법
+
+5) 자바스크립트에서 미리 정해 놓은 예약어(예: let 등)는 변수 이름으로 사용할 수 없음
+
+6) 무의미한 변수 이름은 피한다
+
+< var / let / const >
+
+ECMAScript 2015(ES6) 이전까지는 var를 사용해 변수를 선언했음
+지금은 자바스크립트 역할이 커지면서 var로는 부족해서 let과 const를 사용하게 됨
+
+키워드      선언하지 않고 사용하면?     재선언      재할당
+
+var         오류 없음                  가능         가능
+let         오류 발생                  불가능       가능
+const       오류 발생                  불가능       불가능
+
+
+
+
+
+-->
