@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<head>
+  <title>Document</title>
+  <script>
+    //<inch를 cm 단위로 변경하기>
+
+    // 숫자를 입력받음
+    const rawInput = prompt('inch 단위의 숫자를 입력')
+
+    // 입력받은 데이터를 숫자형으로 변경하고 cm 단위로 변경
+    const inch = Number(rawInput)
+    const cm = inch * 2.54
+
+    // 출력
+    alert(`${inch}inch는 ${cm}cm 입니다.`)
+  </script>
+</head>
+<body>
+  
+</body>
+</html>
+
+
+<!--  
+
+<문자열 자료형으로 변환하기>
+
+String() 함수   ==    다른 자료형을 문자열 자료형으로 변환
+
+String(자료)
+
+> String(52.273)
+"52.273"
+
+> String(true)
+"true"
+
+>String(false)
+"false"
+
+<문자열 연산자를 사용해서 자료형 변환하기>
+
+String() 함수를 사용하지 않고도
+다른 자료형을 문자열로 변활할 수 있음
+
+문자열 연결 연산자(+)를 사용
+
+> 273 + ""
+"273"
+                빈 문자열을 연결해 문자열 자료형으로 변환
+> true + "
+"true"
+
+<불 자료형 변환하기>
+
+Boolean()함수   ==    다른 자료형을 불 자료형으로 변환
+
+Boolean(자료)
+
+대부분 자료는 불로 변환했을 때 true
+
+다만  0, NaN, '...', "..."(빈 문자열), null, undefined
+5가지의 자료형은 false로 변환됨.
+
+*** false로 변환되는 5가지의 자료형 외우기 ***
+
+> Boolean(0)
+false
+
+> Boolean(NaN)
+false
+
+> Boolean("")
+false
+
+> let 변수
+undefined
+
+>Boolean(변수)
+false
+
+<논리 부정 연산자를 사용해 자료형 변환하기>
+
+Boolean() 함수를 사용하지 않고 논리 부정 연산자(!)를 사용해서
+다른 자료형을 불 자료형으로 변환 할 수 있음
+
+불이 아닌 다른 자료에 논리 부정 연산자를 2번 사용하면
+불 자료형으로 변환함.
+
+> !!273
+true
+
+> !!0
+false
+
+>!!'안녕하세요'
+true
+
+>!!''
+false
+
+** 불 자료형 변환시 대부분의 자료는 
+    true로 변환되지만.
+    0, NaN, 빈 문자열, null, undefined는
+    false로 변환함.
+
+-->

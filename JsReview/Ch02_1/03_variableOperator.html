@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<head>
+  <title>Document</title>
+  <script>
+    // 변수를 선언
+    let list = ''
+    
+    // 연산자를 사용
+    list += '<ul>'
+    list += ' <li>Hello<li>'
+    list += ' <li>Javascript<li>'
+    list += '</ul>'
+
+    // 문서에 출력
+    document.write(list)
+
+    /*
+    코드를 실행하면 웹 페이지에 ul 태그와 li 태그가 출력
+    변수와 복합 대입 연산자 사용
+    */
+    
+    // 복합 대입 연산자를 사용하지 않은 경우(1)
+    const list1 = '<ul><li>Hello</li><li>Javascript</li></ul>'
+
+    document.write(list1)
+
+    // 복합 대입 연산자를 사용하지 않은 경우(2)
+    document.write('<ul><li>Hello</li><li>Javascript</li></ul>')
+
+  </script>
+</head>
+<body>
+  
+</body>
+</html>
+<!--  
+
+<변수에 적용할 수 있는 연산자>
+
+변수는 복합 대입 연산자와 증감 연산자를 사용할 수 있음
+
+<복합 대입 연산자>
+
+대입 연산자와 다른 연산자를 함께 사용하는 연산자.
+
+복합 대입 연산자     설명                 사용 예         의미
+
++=      기존 변수의 값에 값을 더 함       a += 1        a = a + 1
+
+-=      기존 변수의 값에 값을 뺌          a -= 1        a = a - 1
+
+*=      기존 변수의 값에 값을 곱함        a *= 1        a = a * 1
+
+/=      기존 변수의 값에 값을 나눔        a /= 1        a = a / 1
+
+%=      기존 변수의 값에 나머지를 구함    a %= 1        a = a % 1
+
+> let value = 10
+undefined
+
+> value += 10
+20
+
+> value
+20
+
+-->
