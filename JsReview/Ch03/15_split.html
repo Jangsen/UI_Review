@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<head>
+  <title>Document</title>
+  <script>
+    const rawInput = prompt("태어난 해를 입력",'')
+    const year = Number(rawInput)
+    const tti = "원숭이,닭,개,돼지,쥐,소,호랑이,토끼,용,뱀,말,양".split(",")
+
+    alert(`${year}년에 태어났다면 ${tti[year % 12]}띠입니다.`)
+
+    /*
+    '문자열A'.split('문자열B') 메소드는 문자열A를 문자열B로 잘라서
+    배열을 만들어내는 메소드
+    
+    "원숭이,닭,개,돼지,쥐,소,호랑이,토끼,용,뱀,말,양".split(",")
+    에서
+    "원숭이,닭,개,돼지,쥐,소,호랑이,토끼,용,뱀,말,양"을
+    "." 로 잘랐으므로
+    ["원숭이","닭","개","돼지","쥐","소","호랑이","토끼","용","뱀","말","양"]
+    배열이 만들어짐.
+    
+    
+    */
+  </script>
+</head>
+<body>
+  
+</body>
+</html>
