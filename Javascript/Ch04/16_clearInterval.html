@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<head>
+  <title>Document</title>
+  <script>
+
+    let counter = 0;
+    let timer = setInterval(() => {     // 타이머 시작
+    console.log("안녕하세요?")
+    counter++;                    // 인사말 표시 횟수 1 증가
+    if (counter === 5)
+    clearInterval(timer);           
+    // counter = 5 라면 타이머 종료
+    }, 2000);
+
+  </script>
+</head>
+<body>
+  
+</body>
+</html>
+
+<!--  
+
+<clearInterval() - 반복 실행 멈추기>
+
+* setInterval() 함수는 한 번 실행하면 웹 브라우저를 종료하기 전까지는 계속 실행된다.
+
+* 특정 조건이 되었을 경우 반복 실행을 멈추려면 clearInterval() 사용
+
+clearInterval(타이머) 
+
+* setInterval()을 사용해서 반복 중인 함수를 ‘타이머’라고 부름
+
+* 반복 중인 함수를 변수에 저장
+-> 타이머 변수라고 함
+
+let timer = setInterval(() => {
+  console.log(“안녕하세요?”)
+}, 2000);
+
+
+ex)인삿말을 5번 표시하면 반복을 멈추기.
+
+let counter = 0;
+ 
+let timer = setInterval(() => {     // 타이머 시작
+
+  console.log("안녕하세요?")
+
+  counter++;                        // 인사말 표시 횟수 1 증가
+
+  if (counter === 5)
+
+    clearInterval(timer);           // counter = 5 라면 
+
+    타이머 종료
+
+}, 2000 );
+
+
+
+-->

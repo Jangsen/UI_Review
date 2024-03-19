@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<head>
+  <title>Document</title>
+  <script>
+
+// 변수에 할당된 익명 함수
+
+    let sum = function(a, b) {
+    return a + b;
+    }
+    console.log(`함수 실행 결과 : ${sum(10, 20)}`);
+
+// 콜백 함수로 사용된 익명 함수
+
+    setTimeout(function(){
+      console.log('3초가 지났습니다!');
+    }, 3000);
+
+// // 이벤트 핸들러로 사용된 익명 함수
+
+//     document.getElementById('myButton').addEventListener('click', function(){});
+
+// 즉시 실행되는 익명 함수
+    (function(){
+      console.log('이 함수는 즉시 실행됨')
+    });
+
+ // 인자가 없을 때
+    (function() {
+      let username = prompt('이름을 입력');
+      alert(`${username}님, 안녕하세요`);
+    })();
+
+// 선언과 동시에 실행
+
+// 인자가 있을 때
+    (function(a,b){
+      let sum = a + b;
+      console.log(`함수 실행 결과 : ${sum}`)
+    })(100,200);
+  </script>
+</head>
+<body>
+  
+</body>
+</html>
+
+<!--  
+
+<함수를 변수에 할당해서 사용하기>
+
+익명함수를 사용하는 것은  마치 하나의 값처럼 사용하기 위해서
+-> 함수를 변수에 할당할 수도 있고, 다른 함수의 인자로 사용할 수도 있음
+
+<즉시 실행 함수>
+
+지금까지는 함수를 선언한 후 실행 
+-> 같은 함수를 여러번 실행할 수 있음
+
+(function() {
+  ...
+})(); 
+
+(function(매개변수) {
+  ......
+})(인수); 
+
+인자가 없을 때
+
+(function() {
+  let username = prompt(‘이름을 입력하세요.’);
+  alert(`${username}님, 안녕하세요?`);
+})();
+
+인자가 있을 때
+
+(function(a, b) {
+  let sum = a + b;
+  console.log(`함수 실행 결과 : ${sum}`)
+})(100,200);
+
+-->

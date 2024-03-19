@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<head>
+  <title>Document</title>
+  <script>
+    const factor = 5;
+
+    function calc(){
+      return num * factor;
+    }
+    {  
+      const num = 10;
+      let result = calc();
+      console.log(`result : ${result}`);
+    }
+
+  </script>
+</head>
+<body>
+  
+</body>
+</html>
+
+<!--  
+
+let, const 변수의 스코프 - 블록 스코프
+
+자바스크립트에서 이야기하는 블록은 
+{ 와 }로 둘러싸인 영역을 가리킴.
+
+블록별로 변수의 유효 범위가 결정되는 것을 
+블록 스코프(block scope)라고 함.
+
+let이나 const를 사용해 만든 변수는 
+변수가 선언된 블록 안에서만 유효하다. (블록 변수)  
+
+if (true) {
+  var x = 10;
+  let y = 20;
+  const z = 30;
+}
+
+변수 x는 var 키워드로 선언되었으므로 
+블록 스코프가 아니라 함수 스코프를 따름. 
+
+따라서 if 문 내에서 선언된 변수 x는 
+if 문 블록 외부에서도 접근할 수 있음. 
+
+그러나 변수 y와 z는 let과 const 키워드로 선언되었기 때문에 
+블록 스코프를 따르므로 if 문 블록 외부에서 접근할 수 없음.
+
+-->

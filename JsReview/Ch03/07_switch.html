@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<head>
+  <title>Document</title>
+  <script>
+    const input = Number(prompt("숫자를 입력", "숫자"))
+
+    switch(input % 2){  //나머지 연산자를 사용하여 홀,짝 구분
+      case 0:
+        alert("짝수")
+        break
+      case 1:
+        alert("홀수")
+        break
+      default :
+        alert("숫자가 아님")
+        break
+    }
+
+    /*
+    break 키워드는 switch 조건문이나 반복문을 빠져나가기 위해
+    사용하는 키워드
+
+    코드를 읽다가 break 키워드를 만나면 break 키워드를 감싼
+    switch 조건문이나 반복문을 완전히 빠져나감.
+
+    
+    
+    
+    */
+
+  </script>
+</head>
+<body>
+  
+</body>
+</html>
+
+<!--  
+
+switch 조건문과 짧은 조건문
+
+if 조건문 외에도
+switch 조건문, 조건부 연산자(삼항 연산자), 논리 연산자
+
+switch 조건문
+
+switch(자료){
+  case 조건A:
+  break
+  case 조건B:
+  break
+  default:    (생략 가능)
+  break
+}
+
+-->

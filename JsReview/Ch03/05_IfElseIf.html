@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<head>
+  <title>Document</title>
+  <script>
+    // 변수 선언
+    const date = new Date()
+    const hour = date.getHours()
+    // if else if 조건문
+
+    if(hour < 11){
+      // 표현식 hour < 11이 참일 때 실행
+      alert("아침 먹을 시간")
+    } else if(hour < 15){
+      // 표현식 hour < 11이 거짓이고, 
+      // 표현식 hour < 15가 참일 때 실행
+      alert("점심 먹을 시간")
+    } else {
+      // 표현식 hour < 15가 거짓일 때 실행
+      alert("저녁 먹을 시간")
+    }
+
+  </script>
+</head>
+<body>
+  
+</body>
+</html>
+
+<!-- 
+
+if else if 조건문
+
+중첩 조건문에서 중괄호를 생략한 형태
+
+겹치지 않는 3가지 이상의 조건으로 나눌 때 사용
+
+if(불 표현식){
+  
+  문장
+} else if (불 표현식) {
+
+  문장
+} else if (불 표현식) {
+  
+  문장
+} else {
+  
+  문장
+}
+
+
+-->

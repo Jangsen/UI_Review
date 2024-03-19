@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<head>
+  <title>Document</title>
+  <script>
+
+    // let hi = function(){
+    //   return `안녕하세요?`;
+    // }
+    // hi();
+
+    // 실행할 줄이 한 줄 뿐이라면 중괄호 ({}) 를 생략
+    // 한 줄 명령에 return 문이 포함되어 있다면 return도 생략
+
+    // 매개변수가 없을 경우
+    let hi = () => `안녕하세요?`;
+    hi();
+
+    /* hi(10)으로 인수를 전달할 경우
+      인수를 받을 매개변수가 없기 때문에 인수는 무시되고
+      여전히 `안녕하세요?`가 호출됨
+    */
+
+    // 매개 변수가 있을 경우
+    let hi1 = function(user){
+      console.log(`${user}님, 안녕하세요?`);
+    }
+    hi1("홍길동");
+
+    let sum = function(a,b){
+      return a + b;
+    }
+    sum(10,20);
+
+  </script>
+</head>
+<body>
+  
+</body>
+</html>
+
+<!--  
+
+<화살표 함수>
+
+화살표 함수(애로우 펑션) : ES6 버전부터는 =>을 사용해 함수를 좀 더 간단하게 선언함
+
+화살표 함수는 함수 표현식을 사용할 경우에만 사용할 수 있음.  
+
+( ) => {함수 내용}
+(매개변수) => {함수 내용}
+
+
+<화살표 함수 – 매개변수가 없을 때>
+
+let hi = function() {
+  return `안녕하세요?`;
+}
+hi();
+
+let hi = () => {return `안녕하세요?`;}
+hi(); 
+
+실행할 명령이 한 줄뿐이라면 중괄호({})를 생략 
+한 줄 명령에 return문이 포함되어 있다면 return도 생략 
+
+let hi = () => `안녕하세요?`;
+hi(); 
+
+
+<화살표 함수 – 매개변수가 있을 때>
+
+let hi = function(user) {
+  console.log(`${user}님, 안녕하세요?`);
+}
+hi(“홍길동”);
+
+=> arrowfuntion
+
+let hi = user => console.log(`${user}님, 안녕하세요?`);
+hi("홍길동");
+
+=============================================================
+
+let sum = function(a, b) {
+  return a + b;
+}
+sum(10, 20);
+
+=> arrowfuntion
+
+let sum = (a, b) => a + b;
+sum(10, 20);
+
+
+
+-->

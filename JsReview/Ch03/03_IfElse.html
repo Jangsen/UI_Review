@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<head>
+  <title>Document</title>
+  <script>
+    // 변수를 선언
+    const date = new Date()
+    const hour = date.getHours()
+    // if 조건문
+    if(hour < 12){
+      // 표현식 hour < 12가 참일 때 실행
+      alert("오전입니다.")
+    } else {
+      alert("오후입니다.")
+    }
+
+    /*
+      이렇게 정반대되는 조건을 검사할 때 if else 조건문을 사용하면 if 조건문을 2번 사용하지 않아도 됨.
+
+      또한 if 조건문의 조건 하나를 처리하는 횟수가 줄어
+
+      실제 성능 향상에 조금이나마 도움이 됨
+
+    */
+  </script>
+</head>
+<body>
+  
+</body>
+</html>
+
+<!--  
+
+if else 조건문
+
+서로 반대되는 상황을 표현하는 구문
+
+else 구문은 if 조건문 바로 뒤에 붙여서 사용함.
+
+if(불 값이 나오는 표현식){
+  불 값이 참일 때 실행
+} else {
+  불 값이 거짓일 때 실행
+}
+
+if 조건문과 마찬가지로 실행되는 문장이 하나일 때는
+중괄호를 생략할 수 있지만,
+여러 문장을 실행할 때는 중괄호로 감싸야함.
+
+
+-->
