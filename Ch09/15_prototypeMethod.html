@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div>
+    <img src="img/prototypeMethod.png" alt="">
+  </div>
+</body>
+</html>
+
+<!--  
+
+<프로토타입 메소드>
+
+생성자 함숙 밖에서 프로토타입을 사용해 새로운 메소드를 정의할 수 있음
+
+ex) newBook() 생성자 함수
+
+function newBook (title, pages, done) {
+  this.title = title;
+  this.pages = pages;
+  this.done = done;
+}
+newBook.prototype.finish = function() {
+  this.done === false ? str = "읽는 중" : str = "완독";
+  return str;
+}
+const nBook1 = new newBook("웹 표준의 정석", 648, false);
+const nBook2 = new newBook("점프 투 파이썬", 360, true);
+
+
+-->

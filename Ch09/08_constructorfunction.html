@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!-- 
+    <script> 
+    function 함수명(매개변수){
+      this.키1 : 값1,
+      this.키2 : 값2,
+
+      ...
+
+      this.메소드1: function(){ ... }
+      this.메소드2: function(){ ... }
+
+      ...
+    } 
+
+    or
+
+    const 함수명(매개변수) = function() {
+      ...
+    }
+    
+  </script>
+-->
+<script>
+function Book(title, pages, done = false) {
+  this.title = title;
+  this.pages = pages;
+  this.done = done;
+  this.finish = function () {
+    let str = "";
+    this.done === false ? (str = "읽는 중") : (str = "완독");
+    return str;
+  };
+}
+
+const book1 = new Book("웹 표준의 정석", 648, false);
+const book2 = new Book("점프 투 파이썬", 360, true);
+
+console.log(`${book1.title} - ${book1.pages}쪽 - ${book1.finish()}`);
+console.log(`${book2.title} - ${book2.pages}쪽 - ${book2.finish()}`);
+</script>
+</body>
+</html>
+
+<!--  
+<생성자 함수>
+
+객체마다 반복되는 프로퍼티와 메서드가 있다면 객체 틀을 미리 정의해 놓고 필요할 때마다 그 틀을 사용해서 객체를 만들 수 있음.
+
+객체의 틀을 만들 때 사용하는 함수를 ‘생성자 함수’.
+
+생성자 함수를 사용해서 찍어 내는 객체를 
+
+‘인스턴스’ 또는 ‘인스턴스 객체’라고 부름
+
+< 생성자 함수를 사용해 객체 정의하기 >
+
+생성자 함수는 일반적인 함수와 같은 형식
+
+함수 이름의 첫 글자는 대문자로 사용한다.
+
+함수 내부에서 this를 사용한다
+
+ex) 생성자 함수를 사용해 객체 정의하기
+
+function Book(title, pages, done = false) {
+  this.title = title;
+  this.pages = pages;
+  this.done = done;
+  this.finish = function () {
+    let str = "";
+    this.done === false ? (str = "읽는 중") : (str = "완독");
+    return str;
+  };
+}
+
+const book1 = new Book("웹 표준의 정석", 648, false);
+const book2 = new Book("점프 투 파이썬", 360, true);
+
+console.log(`${book1.title} - ${book1.pages}쪽 - ${book1.finish()}`);
+console.log(`${book2.title} - ${book2.pages}쪽 - ${book2.finish()}`);
+
+
+-->

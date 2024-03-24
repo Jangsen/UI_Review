@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    let student = {
+      name : "Doremi",
+      score : {
+      history : 85,
+      science : 94,
+      average : function () {
+        return (this.history + this.science) / 2
+    }
+  }
+}
+
+student.score.history // 85
+student.score.average() // 89.5
+
+  </script>
+</body>
+</html>
+
+<!--  
+
+<객체 중첩하기>
+
+객체 안에 또 다른 객체를 넣을 수 있음. - 둘 이상의 객체 중첩
+
+
+-->

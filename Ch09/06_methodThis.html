@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    let book4 = {
+      title : "Javascript",
+      pages : 500,
+      author : "고경희",
+      done : false,
+      finish : function() {
+        this.done === false ? console.log("읽는 중") : console.log("완독");
+      }
+    }
+    book4.finish()  // "읽는 중"
+
+
+  </script>
+</body>
+</html>
+
+<!--  
+
+<매소드와 this>
+
+this: 메소드에서 객체 안에 있는 프로퍼티 값을 사용할 때,
+현재 객체를 가리키는 예약어
+
+
+
+
+-->

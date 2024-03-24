@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+</body>
+</html>
+
+<!--  
+
+<클래스를 사용해 객체 정의하기>
+
+자바스크립트의 클래스는 정확한 클래스 개념이 아니라 
+생성자 함수를 좀 더 표현하기 쉽게 바꾼, 
+(systactic sugar) 신탠틱 슈거
+
+기본형
+
+class 클래스명 {
+  constructor(){
+    프로퍼티1,
+    프로퍼티2,
+    ...
+  }
+  메소드1(){...}
+  메소드2(){...}
+}
+
+or
+
+const 클래스명 = class {
+  ...
+}
+
+ex) 클래스를 사용해 객체 정의하기
+
+== 클래스로 객체 정의
+
+class Book2 {
+  constructor(title, pages, done) {
+    this.title = title;
+    this.pages = pages;
+    this.done = done;
+  }
+  finish() {
+    let str = "";
+    this.done === false ? str = "읽는 중" : str = "완독";
+    return str;
+  }
+}
+
+== 인스턴스 객체 만들기
+
+let book1 = new Book2("웹 표준의 정석", 648, false);
+let book2 = new Book2("점프 투 파이썬", 360, true);
+console.log(`${book1.title} - ${book1.pages}쪽 - ${book1.finish()}`);
+console.log(`${book2.title} - ${book2.pages}쪽 - ${book2.finish()}`);
+
+-->
