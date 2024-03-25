@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+</body>
+</html>
+
+<!--  
+
+< 프로미스 체이닝으로 여러 단계 연결하기 >
+
+프로미스는 resolve와 reject를 사용해서 
+성공과 실패에 대한 동작을 명확하게 구별할 수 있고,
+
+함수에 계속해서 함수를 포함시키지 않기 때문에 
+콜백 지옥을 벗어날 수 있는 좋은 방법이다.
+
+(예) A, B, C 각각 실행 시간이 다르지만 
+A 작업이 끝날 때까지 기다렸다가 B 작업을 하고, 
+-> 다시 B 작업이 끝날 때 까지 기다렸다가 C 작업을 해야 한다면?
+
+A.then(B).then(C)
+
+then()을 사용해 여러 개의 프로미스를 연결하는 것을 
+‘프로미스 체이닝’이라고 한다.
+
+
+-->

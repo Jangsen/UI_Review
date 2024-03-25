@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    function displayA(){
+      console.log("A");
+    }
+    function displayB(){
+      setTimeout(() => console.log("B"), 2000);
+    }
+    function displayC() {
+      console.log("C");
+    } 
+    displayA();
+    displayB();
+    displayC();
+
+  </script>
+</body>
+</html>
+
+<!--  
+
+  A, B, C 순서가 아니라 A, C, B 순서로 진행
+  display()를 2초 후에 실행하도록 했기 때문
+
+
+-->

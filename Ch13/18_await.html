@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    async function whatsYourFavorite(){
+      let fav = "Javascript";
+      return fav;
+    }
+    async function displaySubject(subject){
+      return `Hello,${subject}`;
+    }
+    async function init() {
+      const response = await whatsYourFavorite();
+      const result = await displaySubject(response);
+      console.log(result);
+    }
+    init();
+  </script>
+</body>
+</html>
+
+
+<!--  
+
+<await>
+
+프로미스 체이닝을 좀 더 쉽게 작성
+async 함수에서만 사용할 수 있음
+
+
+
+
+-->

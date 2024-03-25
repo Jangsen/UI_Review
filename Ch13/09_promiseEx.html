@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+#container {
+  width:300px;
+  margin:20px auto;
+}
+.start {      
+  padding:10px 20px;            
+}
+.done {
+  color:#999;
+  font-size:0.8em;
+  font-style: italic;
+  text-decoration: line-through;
+}
+.active {
+  padding:10px 20px;
+  background-color:#222;
+  color:white;
+}
+
+  </style>
+</head>
+<body>
+    <div id="container">
+      <div class="start"></div>
+      <div class="end"></div>
+    </div>
+  <script src="js/promiseex.js"></script>
+</body>
+</html>
+
+<!--  
+
+커피 주문하고 완료하는 프로미스
+
+프로미스 제작 코드
+
+프롬프트 창을 통해 사용자에게 원하는 커피를 입력하게 한다. 
+커피 메뉴가 입력되었으면 화면에 주문이 접수되었다고 표시하고 
+3초 후에 resolve 함수에 커피 메뉴를 건네준다. 
+커피 메뉴가 입력되지 않았으면 주문이 없다는 오류 메시지를 표시한다.
+
+프로미스 소비 코드
+성공했으면 display 함수를, 
+실패하면 showErr 함수를 실행한다.  
+화면에 내용을 표시하는 display 함수와 오류를 표시하는 showErr 함수를 만든다.
+
+-->
